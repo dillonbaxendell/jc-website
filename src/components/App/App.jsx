@@ -19,6 +19,7 @@ import InfoPage from '../InfoPage/InfoPage';
 import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
+import JCLandingPage from '../JCLandingPage/JCLandingPage';
 
 import './App.css';
 
@@ -98,7 +99,7 @@ function App() {
 
           <Route
             exact
-            path="/home"
+            path="/register"
           >
             {user.id ?
               // If the user is already logged in, 
@@ -108,6 +109,13 @@ function App() {
               // Otherwise, show the Landing page
               <LandingPage />
             }
+          </Route>
+
+          <Route
+            exact
+            path="/jc"
+          >
+            <JCLandingPage/>
           </Route>
 
           {/* If none of the other routes matched, we will show a 404. */}

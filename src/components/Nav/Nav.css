@@ -5,8 +5,10 @@
   align-items: center;
 
   margin: 0 0 30px;
-  background-color: #00acb0;
+  background-color: none;
   overflow: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .nav a {
@@ -14,17 +16,18 @@
 }
 
 .nav-title {
-  font-size: 24px;
+  font-family: 'Montserrat';
+  font-size: 15px;
   font-weight: 700;
-  color: #f2f2f2;
-  padding-left: 10px;
+  color: #232323;
   margin: 0;
 }
 
 .navLink {
+  font-family: 'Montserrat';
   display: inline-block;
-  color: #f2f2f2;
-  background-color: #00acb0;
+  color: #232323;
+  background-color: none;
   text-align: center;
   padding: 24px 10px;
   text-decoration: none;
