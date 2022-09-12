@@ -7,6 +7,7 @@ body,
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
+  z-index: -1;
 }
 
 img {
@@ -19,6 +20,7 @@ Container
 -------------------------------------------------------------------------------- */
 
 .container {
+  /* Top Right Bottom Left */
   padding: 50px 50px 50px 50px;
 }
 

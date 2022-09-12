@@ -7,40 +7,52 @@ import { useSelector } from 'react-redux';
 function Nav() {
   const user = useSelector((store) => store.user);
 
+  
+
   return (
-    <div className="nav">
-      <Link to="/home">
-        <h2 className="nav-title">JC Lippold</h2>
-      </Link>
-      <div>
-        {/* If no user is logged in, show these links */}
-        {!user.id && (
-          // If there's no user, show login/registration links
-          <Link className="navLink" to="/login">
-            Login / Register
-          </Link>
-        )}
-
-        {/* If a user is logged in, show these links */}
-        {user.id && (
-          <>
-            <Link className="navLink" to="/user">
-              Home
+    <body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <div class="logo">
+            <h2>JC Lippold</h2>
+          </div>
+          <div class="menu-items">
+            <Link to="/jc">
+              <li><a href="#">home</a></li>
             </Link>
-
-            <Link className="navLink" to="/info">
-              Info Page
+            <Link to="/about">
+              <li><a href="#">about</a></li>
             </Link>
-
-            <LogOutButton className="navLink" />
-          </>
-        )}
-
-        <Link className="navLink" to="/about">
-          About
-        </Link>
+            <Link to="/blogs">
+              <li><a href="#">blogs</a></li>
+            </Link>
+            <Link to="/5keverday">
+              <li><a href="#">5k everday conversations</a></li>
+            </Link>
+            <Link to="/#allthethings">
+              <li><a href="#">#allthethings</a></li>
+            </Link>
+            <Link to="/jcapp">
+              <li><a href="#">the JC app</a></li>
+            </Link>
+            <Link to="/speaking">
+              <li><a href="#">speaking</a></li>
+            </Link>
+            <Link to="/contact">
+              <li><a href="#">contact</a></li>
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
+  </body>
   );
 }
 

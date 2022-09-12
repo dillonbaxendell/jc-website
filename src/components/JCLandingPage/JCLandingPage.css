@@ -4,16 +4,15 @@ body {
 
 
 h1 {
-  position: aboslute;
-  max-width: 900px;
-  max-height: 172px;
+  position: auto;
+  /* max-width: 900px; */
   left: 80px;
   right: 190px;
 
   font-family: 'Montserrat';
   font-style: bold;
   font-weight: bolder;
-  font-size: 120px;
+  font-size: 140px;
   line-height: 140px;
 
   display: flex;
@@ -25,6 +24,7 @@ h1 {
 
 
 .grid {
+  margin: auto;
   display: flex;
   flex: 0 1 auto;
   /* defaults to 'row' */
@@ -36,10 +36,12 @@ h1 {
 }
 
 .grid-col {
+  width: 50%;
   flex: 0 0 auto;
   padding: 0 0.5rem 0.5rem;
   box-sizing: border-box;
-  border: 1px solid black;
+  height: auto;
+  max-height: 100vh;
 }
 
 .grid-col_1 {
@@ -47,13 +49,21 @@ h1 {
   max-width: 8.33333333%;
 }
 
-.grid-col_8 {
-  flex-basis: 66.66666667%;
-  max-width: 66.66666667%;
-  border: 1px solid red;
+.grid-col_2 {
+  flex-basis: 8.33333333%;
+  max-width: 8.33333333%;
+  justify-content: right;
 }
 
+.grid-col_3 {
+  flex-basis: 8.33333333%;
+  max-width: 8.33333333%;
+  /* border: 1px solid black; */
+}
+
+
 .button {
+  position: auto;
   font-family: 'Montserrat';
   background-color: rgba(244, 93, 72, 0.8);
   border: none;
@@ -66,4 +76,24 @@ h1 {
 }
 
 
+.button:hover {
+  border: 2px solid black;
+  transform: scale(1.1);
+}
 
+
+.screen {
+  height: 75vh;
+}
+
+img {
+  max-width: 50%;
+  max-height: 80vh;
+  float: right;
+}
+
+.center {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  float: right;
+}

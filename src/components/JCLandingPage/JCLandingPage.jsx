@@ -8,26 +8,35 @@ import RegisterForm from '../RegisterForm/RegisterForm';
 function JCLandingPage() {
   const history = useHistory();
 
+  function handleContactMe() {
+    console.log('clicked Contact Me');
+  }
+
 
   return (
     <div className="container">
+    <div className="screen">
 
       <div className="grid">
-        <div className="grid-col grid_col_1">
+        <div className="spacer">
+
+        </div>
+        <div className="center grid-col grid_col_1">
           <h1>
             Welcome to my world.
           </h1>
-
-          <h2 className="button">
+          <h2 className="button" onClick={handleContactMe}>
             contact me
           </h2>
-          
+        </div>
 
-        </div>
+        
         <div className="grid-col grid_col_2">
-          Picture goes here
+          <img src="../Imgs/jcwithcircle.png" alt="jcwithcircle"/>
         </div>
+
       </div>
+    </div>
     </div>
   );
 }
