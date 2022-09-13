@@ -89,6 +89,9 @@ h1 {
 img {
   max-width: 50%;
   max-height: 80vh;
+}
+
+.landing-img {
   float: right;
 }
 

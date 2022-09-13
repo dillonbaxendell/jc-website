@@ -1,0 +1,87 @@
+.about-grid-col_1 {
+    float: left;
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+  
+  .about-grid-col_2 {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+
+  #typo-content {
+    min-width: 50%;
+  }
+
+  .header {
+    position: auto;
+    font-family: 'Montserrat';
+    background-color: rgba(244, 93, 72, 0.8);
+    border: none;
+    color: #feefe8;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    border-radius: 200px;
+
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  #about-header {
+    float: right;
+  }
+
+  .screen {
+    height: 75vh;
+  }
+
+  .about-img {
+    padding-top: 50px;
+    float: left;
+  }
+
+  p {
+    font-weight: 200;
+    line-height: 3rem;
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-size: 28px;
+  }
+
+  .about-paragraph {
+    padding-top: 30vh;
+  }
+
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    /* text-align: center; */
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    border: 3px solid #ef7a69;
+    background: #ffffff;
+    color: #ef7a69;
+  }
+
+  .socials {
+    border: 1px solid black;
+    float: right;
+    margin-top: 20vh;
+  }
